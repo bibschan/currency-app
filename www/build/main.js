@@ -28,17 +28,21 @@ var CreateaccountPage = (function () {
     function CreateaccountPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.signup = {};
     }
+    CreateaccountPage.prototype.logForm = function () {
+    };
     CreateaccountPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CreateaccountPage');
+        console.log('loaded');
     };
     CreateaccountPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-createaccount',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/createaccount/createaccount.html"*/'<!--\n  Generated template for the CreateaccountPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>createaccount</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/createaccount/createaccount.html"*/,
+            selector: 'page-createaccount',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/createaccount/createaccount.html"*/'<!--\n  Generated template for the CreateaccountPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>createaccount</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding id="signupCss">\n\n\n\n<ion-grid>\n	<form id="signUpForm" (ngSubmit)="logForm()">\n	  <ion-row>  \n	     <ion-item>\n			<ion-label>Name</ion-label>\n			<ion-input type="text" [(ngModel)]="signup.name" name="name"></ion-input>\n		</ion-item>\n	  </ion-row>\n\n	  <ion-row>\n	  	<ion-item>\n			<ion-label>Email</ion-label>\n			<ion-input type="text" [(ngModel)]="signup.username" name="username"></ion-input>\n		</ion-item>     \n	  </ion-row>\n\n	  <ion-row>\n	  	<ion-item>\n	        <ion-label> Password </ion-label>\n	        <ion-input type="text" [(ngModel)]="signup.password" name="password"></ion-input>\n	    </ion-item>\n	  </ion-row>\n	</form>\n	<br/>\n\n      <button id="submitButton" ion-button type="submit" block>Sign up</button>\n</ion-grid>\n\n<!-- \n<form id="signUpForm" (ngSubmit)="logForm()">\n\n    <ion-item>\n		<ion-label>Name</ion-label>\n		<ion-input type="text" [(ngModel)]="signup.name" name="name"></ion-input>\n	</ion-item>	\n\n    <ion-item>\n		<ion-label>Email</ion-label>\n		<ion-input type="text" [(ngModel)]="signup.username" name="username"></ion-input>\n	</ion-item>     \n\n	<ion-item>\n        <ion-label> Password </ion-label>\n        <ion-input type="text" [(ngModel)]="signup.password" name="password"></ion-input>\n    </ion-item>\n\n    <br/>\n\n      <button id="submitButton" ion-button type="submit" block>Sign up</button>\n    </form> -->\n\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/createaccount/createaccount.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
     ], CreateaccountPage);
     return CreateaccountPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=createaccount.js.map
@@ -79,7 +83,7 @@ var FeedbackPage = (function () {
     };
     FeedbackPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-feedback',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/feedback/feedback.html"*/'<!--\n  Generated template for the FeedbackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>feedback</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/feedback/feedback.html"*/,
+            selector: 'page-feedback',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/feedback/feedback.html"*/'<!--\n  Generated template for the FeedbackPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>feedback</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/feedback/feedback.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], FeedbackPage);
@@ -124,7 +128,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);
@@ -169,7 +173,7 @@ var LoginwithfacebookPage = (function () {
     };
     LoginwithfacebookPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-loginwithfacebook',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/loginwithfacebook/loginwithfacebook.html"*/'<!--\n  Generated template for the LoginwithfacebookPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>loginwithfacebook</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/loginwithfacebook/loginwithfacebook.html"*/,
+            selector: 'page-loginwithfacebook',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/loginwithfacebook/loginwithfacebook.html"*/'<!--\n  Generated template for the LoginwithfacebookPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>loginwithfacebook</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/loginwithfacebook/loginwithfacebook.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginwithfacebookPage);
@@ -214,7 +218,7 @@ var LoginwithgmailPage = (function () {
     };
     LoginwithgmailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-loginwithgmail',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/loginwithgmail/loginwithgmail.html"*/'<!--\n  Generated template for the LoginwithgmailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>loginwithgmail</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/loginwithgmail/loginwithgmail.html"*/,
+            selector: 'page-loginwithgmail',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/loginwithgmail/loginwithgmail.html"*/'<!--\n  Generated template for the LoginwithgmailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>loginwithgmail</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/loginwithgmail/loginwithgmail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginwithgmailPage);
@@ -259,7 +263,7 @@ var RatealertPage = (function () {
     };
     RatealertPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ratealert',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/ratealert/ratealert.html"*/'<!--\n  Generated template for the RatealertPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ratealert</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/ratealert/ratealert.html"*/,
+            selector: 'page-ratealert',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/ratealert/ratealert.html"*/'<!--\n  Generated template for the RatealertPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ratealert</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/ratealert/ratealert.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], RatealertPage);
@@ -360,7 +364,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/home/home.html"*/'<ion-header >\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Currency</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--- Do not delete button. Testing the navigation. -->\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/home/home.html"*/'<ion-header >\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Currency</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--- Do not delete button. Testing the navigation. -->\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
@@ -557,7 +561,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -602,7 +606,7 @@ var ChangethemePage = (function () {
     };
     ChangethemePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-changetheme',template:/*ion-inline-start:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/changetheme/changetheme.html"*/'<!--\n  Generated template for the ChangethemePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>changetheme</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andyle/Desktop/working_folder/currency-app/src/pages/changetheme/changetheme.html"*/,
+            selector: 'page-changetheme',template:/*ion-inline-start:"/Users/bibianasouza/currency-app/src/pages/changetheme/changetheme.html"*/'<!--\n  Generated template for the ChangethemePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>changetheme</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/bibianasouza/currency-app/src/pages/changetheme/changetheme.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ChangethemePage);

@@ -18,8 +18,15 @@ export class CreateaccountPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+	  signup = {}
+	  logForm() {
+
+	  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CreateaccountPage');
+    console.log('loaded');
   }
 
 }
+
+

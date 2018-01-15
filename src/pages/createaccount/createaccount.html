@@ -13,6 +13,61 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding id="signupCss">
+
+
+
+<ion-grid>
+	<form id="signUpForm" (ngSubmit)="logForm()">
+	  <ion-row>  
+	     <ion-item>
+			<ion-label>Name</ion-label>
+			<ion-input type="text" [(ngModel)]="signup.name" name="name"></ion-input>
+		</ion-item>
+	  </ion-row>
+
+	  <ion-row>
+	  	<ion-item>
+			<ion-label>Email</ion-label>
+			<ion-input type="text" [(ngModel)]="signup.username" name="username"></ion-input>
+		</ion-item>     
+	  </ion-row>
+
+	  <ion-row>
+	  	<ion-item>
+	        <ion-label> Password </ion-label>
+	        <ion-input type="text" [(ngModel)]="signup.password" name="password"></ion-input>
+	    </ion-item>
+	  </ion-row>
+	</form>
+	<br/>
+
+      <button id="submitButton" ion-button type="submit" block>Sign up</button>
+</ion-grid>
+
+<!-- 
+<form id="signUpForm" (ngSubmit)="logForm()">
+
+    <ion-item>
+		<ion-label>Name</ion-label>
+		<ion-input type="text" [(ngModel)]="signup.name" name="name"></ion-input>
+	</ion-item>	
+
+    <ion-item>
+		<ion-label>Email</ion-label>
+		<ion-input type="text" [(ngModel)]="signup.username" name="username"></ion-input>
+	</ion-item>     
+
+	<ion-item>
+        <ion-label> Password </ion-label>
+        <ion-input type="text" [(ngModel)]="signup.password" name="password"></ion-input>
+    </ion-item>
+
+    <br/>
+
+      <button id="submitButton" ion-button type="submit" block>Sign up</button>
+    </form> -->
 
 </ion-content>
+
+
